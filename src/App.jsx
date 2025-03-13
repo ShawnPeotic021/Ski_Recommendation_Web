@@ -43,7 +43,7 @@ function App() {
 
     try {
       // Send data to Flask backend
-      const response = await axios.post('http://127.0.0.1:5000/' + selectedSport, formData, {
+      const response = await axios.post('https://ski-recommendation-api.onrender.com/' + selectedSport, formData, {
         headers: { 'Content-Type': 'application/json' },
       });
 
