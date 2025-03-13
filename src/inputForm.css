@@ -1,0 +1,101 @@
+/* InputForm */
+  /* Back Button */
+  .back-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px; /* Reduce space */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .back-button:hover {
+    color: #82c4ff;
+  }
+  
+  .back-icon {
+    width: 20px;
+    height: 20px;
+    stroke-width: 3;
+  }
+  
+  /* Center Form when Visible */
+  .form-container-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    background: rgba(30, 30, 30, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 10;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Form Labels (Make them More Visible) */
+  .form-container label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Input Fields */
+  .form-container input,
+  .form-container select {
+    width: 200px; /* Set a fixed width for uniformity */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Make Select Placeholder Transparent */
+  .form-container select[disabled] {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Form Button */
+  .form-container button {
+    width: 100%;
+    padding: 22px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 15px;
+  }
+  
+  .form-container button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+  }
+  
+
+/* Hide the logo & title when the form is visible */
+.hidden {
+  display: none;
+}
+  
+  
+  
