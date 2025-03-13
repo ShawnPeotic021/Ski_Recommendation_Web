@@ -7,6 +7,7 @@ import { AlertMessage } from './components/AlertMessage';
 import './index.css';
 import './inputForm.css';
 import './resultDisplay.css';
+import './alertDisplay.css';
 
 function App() {
   const [selectedSport, setSelectedSport] = useState(null);
