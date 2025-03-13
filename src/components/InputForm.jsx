@@ -28,7 +28,7 @@ export const InputForm = ({ sport, setRecommendation }) => {
       return;
     }
     try {
-      const response = await fetch(`http://127.0.0.1:5000/${sport}`, {
+      const response = await fetch(`https://ski-recommendation-api.onrender.com/${sport}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
