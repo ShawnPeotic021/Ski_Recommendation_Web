@@ -13,7 +13,7 @@ export const AlertMessage = ({ message, type = 'error' }) => {
   };
 
   return (
-    <div className={`${alertStyles[type]} px-4 py-3 rounded relative mb-4`} role="alert">
+    <div className={"alert-container"} role="alert">
       <span className="block sm:inline">{message}</span>
       <button 
         onClick={() => setVisible(false)} 
