@@ -64,7 +64,7 @@
     border: none;
   }
   
-  .back-button:hover {
+  .back-button-result:hover {
     background-color: black;
     color: white;
     border: 1px solid white;
