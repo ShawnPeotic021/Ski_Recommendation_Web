@@ -96,6 +96,10 @@
 .hidden {
   display: none;
 }
-  
+
+.error-message{
+  color: aliceblue;
+}
+
   
   
