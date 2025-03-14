@@ -143,50 +143,14 @@ where the program starts
       )}
   
       {/* Recommendation Display */}
-      {recommendation && (
-        <div className="recommendation-container">
-        <h2 className="recommendation-title">Your Recommended Gear</h2>
-          {selectedSport === "ski" ? (
-            <>
-              <div className="recommendation-item">
-                <strong>Din Code</strong>
-                <p>{recommendation.din_code}</p>
-              </div>
-              <div className="recommendation-item">
-                <strong>Din Setting</strong>
-                <p>{recommendation.din_setting}</p>
-              </div>
-              <div className="recommendation-item">
-                <strong>Recommended Ski Length (cm)</strong>
-                <p>{recommendation.recommended_ski_length_cm}</p>
-              </div>
-            </>
-          ) : (
-            <>
-              <div className="recommendation-item">
-                <strong>Binding Stiffness</strong>
-                <p>{recommendation.binding_stiffness}</p>
-              </div>
-              <div className="recommendation-item">
-                <strong>Recommended Snowboard Length (cm)</strong>
-                <p>{recommendation.recommended_snowboard_length_cm}</p>
-              </div>
-            </>
-          )}
-
-          <div className="recommendation-item">
-            <strong>User Preferred Type</strong>
-            <p>{recommendation.user_preferred_type}</p>
-          </div>
-
-          <button className="back-button-result" onClick={() => setRecommendation(null)}>
-            Back to Form
-          </button>
-
-        </div>
-      )}
+      {recommendation && 
+        <ResultDisplay 
+          recommendation={recommendation}
+          setRecommendation={setRecommendation}
+          selectedSport={selectedSport}  // Pass sport type
+          />}
     </div>
-  );
+  )
 }
 
 export default App;
