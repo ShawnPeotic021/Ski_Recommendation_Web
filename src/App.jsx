@@ -4,10 +4,10 @@ import axios from 'axios';  // Import axios for API calls
 import { InputForm } from './components/InputForm';
 import { ResultDisplay } from './components/ResultDisplay';
 import { AlertMessage } from './components/AlertMessage';
-import './index.css';
-import './inputForm.css';
-import './resultDisplay.css';
-import './alertDisplay.css';
+import './css/index.css';
+import './css/inputForm.css';
+import './css/resultDisplay.css';
+import './css/alertDisplay.css';
 
 function App() {
   const [selectedSport, setSelectedSport] = useState(null);
