@@ -23,7 +23,7 @@ export const ResultDisplay = ({ recommendation, setRecommendation, selectedSport
             </div>
             <div className="recommendation-item">
               <strong>Din Setting</strong>
-              <p>{capitalizeFirstLetter(recommendation.din_setting)}</p>
+              <p>{recommendation.din_setting || "N/A" }</p>
             </div>
             <div className="recommendation-item">
               <strong>Recommended Ski Length (cm)</strong>
