@@ -10,7 +10,7 @@
     font-weight: bold;
     border: none;
     cursor: pointer;
-    margin-bottom: 10px; /* Reduce space */
+    margin-bottom: 20px; /* Reduce space */
     transition: color 0.3s ease-in-out;
   }
   
